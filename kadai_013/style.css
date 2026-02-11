@@ -22,20 +22,25 @@ PC用のスタイル
     min-width: 960px;
     margin: 0 auto 0 auto;
   }
-  /* SP用ナビゲーション非表示　*/
-   #menu-sp {
-    display: none;
-  }
-
-   #nav-sp {
-    display: none;
-  }
-
+  
   /* ヘッダー */
   header {
     display: flex;
     justify-content: space-between;
   }
+
+  #nav-pc ul {
+    display: flex;
+  }
+
+  #nav-pc li {
+  list-style: none; 
+  margin-left: 20px; 
+  }
+
+  #nav-pc li:first-child {
+  margin-left: 0;
+}
 
   /* ナビゲーションのレイアウト */
   #nav-pc {
@@ -45,26 +50,33 @@ PC用のスタイル
   }
 
   /* ナビゲーションのリンクの装飾設定 */
-  #nav-pc>a {
+  #nav-pc > a {
     text-decoration: none;
     margin-left: 20px;
   }
 
-  #nav-pc>a:link {
+  #nav-pc > a:link {
     color: #0d0d0d;
   }
 
-  #nav-pc>a:visited {
+  #nav-pc > a:visited {
     color: #0d0d0d;
   }
 
-  #nav-pc>a:hover {
+  #nav-pc > a:hover {
     color: #0d0d0d;
-    text-decoration: underline;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
   }
 
-  #nav-pc>a:active {
-    color: #0d0d0d;
+  /* SP用ナビゲーション非表示　*/
+   #menu-sp {
+    display: none;
+  }
+   
+   #nav-sp {
+    display: none;
   }
 
 }
@@ -119,24 +131,24 @@ SP用のスタイル
     display: block;
   }
 
-   #nav-spa:link {
+   #nav-sp a:link {
     color: #ffffff;
   }
 
-   #nav-spa:visited {
+   #nav-sp a:visited {
     color: #ffffff;
   }
 
-   #nav-spa:hover {
+   #nav-sp a:hover {
     color: #ffffff;
     text-decoration: underline;
   }
 
-   #nav-spa:active {
+   #nav-sp a:active {
     color: #ffffff;
   }
 
-   #nav-sp.menu {
+   #nav-sp a.menu {
     text-decoration: none;
     display: block;
     margin: 0 20px 0 20px;
